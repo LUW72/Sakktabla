@@ -1,0 +1,60 @@
+table, td, th{
+    border: 1px solid grey;
+    border-collapse: collapse; /*Cellák közti rések eltüntetése*/
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+table>thead>tr{
+    border: 3px solid lightgrey;
+}
+
+th {
+    background-color: red;
+    color: beige;
+}
+
+tr:nth-child(odd){ /*N-edik sor színezése*/
+    color: red;
+    background-color: lightgray;
+}
+
+.osszevont{
+    /* ALT SHIFT A*/
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.reszponzivtablazat{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
