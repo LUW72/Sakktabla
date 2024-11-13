@@ -1,16 +1,32 @@
-/* Itt készítsük el a táblán látható oldalt */
+table,
+td,
+th {
+  border-collapse: collapse; /*Cellák közti rések eltüntetése*/
+}
 
-/* 700px-nél a nav az article fölé kerüljön és az aside az art alá
+table,
+th {
+  padding: 5px 5px 5px 5px;
+}
 
-A menüpontok no aláhúzás
-Ne legyen felsorolás
-ha fölé viszem az egeret, változzon a háttérszíne (li)
+table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
 
-legyen létrehozva az az index.html, amiket a menüben leírtunk és 
+table th {
+  word-wrap: break-word;
+}
 
-új táblázatformázás css
-ugyanez az oldalalakítás*/
+.kutyastablazat {
+  width: 100%;
+  overflow-x: scroll;
+}
 
-
-
-
+tr:nth-child(even) {
+  /*N-edik sor színezése*/
+  background-color: lightgray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

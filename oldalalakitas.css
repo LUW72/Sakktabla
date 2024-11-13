@@ -11,6 +11,105 @@ legyen létrehozva az az index.html, amiket a menüben leírtunk és
 új táblázatformázás css
 ugyanez az oldalalakítás*/
 
+* {
+  box-sizing: border-box;
+}
 
+nav {
+  background-color: antiquewhite;
+}
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
 
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+}
 
+nav a:link {
+  text-decoration: none;
+  color: brown;
+}
+
+nav a:visited {
+  color: brown;
+}
+
+nav ul li:hover {
+  background-color: #dce4c9;
+}
+
+header {
+  grid-area: h;
+}
+nav {
+  grid-area: n;
+}
+article {
+  grid-area: a;
+}
+aside {
+  grid-area: as;
+}
+footer {
+  grid-area: f;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    "h h h "
+    "n a as"
+    "f f f ";
+}
+
+header {
+  background-color: #aa5486;
+  padding: 10px;
+  text-align: center;
+  color: #fbf4db;
+}
+
+article {
+  margin: 10px;
+}
+
+aside {
+  background-color: #fbf4db;
+  padding: 10px;
+}
+
+article {
+  padding-bottom: 300px;
+}
+
+footer {
+  text-align: center;
+  background-color: #c1bdae;
+  margin: 0px;
+  padding: 0px;
+}
+footer p {
+  margin: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "a"
+      "as"
+      "f";
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

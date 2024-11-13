@@ -1,0 +1,28 @@
+table,
+td {
+  border: 2px solid rgb(134, 134, 134);
+  border-collapse: collapse;
+}
+
+table > tbody > tr > th {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(107, 107, 107);
+  color: peachpuff;
+}
+
+table > tbody > tr > td {
+  height: 40px;
+  width: 40px;
+}
+
+.sakkostabalzat {
+  width: 100%;
+}
+
+tr:nth-of-type(even) td:nth-of-type(even) {
+  background-color: rgb(196, 196, 196);
+}
+tr:nth-of-type(odd) td:nth-of-type(odd) {
+  background-color: rgb(196, 196, 196);
+}
